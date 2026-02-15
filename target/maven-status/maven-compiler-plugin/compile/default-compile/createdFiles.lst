@@ -1,7 +1,0 @@
-com\ums\model\User.class
-com\ums\UserManagementSystemApplication.class
-com\ums\config\SecurityConfig.class
-com\ums\controller\UserController.class
-com\ums\service\CustomOAuth2UserService.class
-com\ums\repository\UserRepository.class
-com\ums\model\User$Role.class
