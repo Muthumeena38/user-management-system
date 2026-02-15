@@ -1,17 +1,18 @@
-# Use Java 21 (matches your eclipse-temurin)
-FROM eclipse-temurin:21-jdk
+# Use Maven + Java 21
+FROM maven:3.9.6-eclipse-temurin-21
 
-# Set working directory inside container
+# Set working directory
 WORKDIR /app
 
-# Copy everything to container
+# Copy everything
 COPY . .
 
 # Build the Spring Boot app
-RUN ./mvnw clean package -DskipTests
+RUN mvn clean package -DskipTests
 
-# Expose port (Render uses 8080 by default)
+# Expose port
 EXPOSE 8080
 
 # Run the jar file
 CMD ["java", "-jar", "target/user-management-system-0.0.1-SNAPSHOT.jar"]
+
