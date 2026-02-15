@@ -1,0 +1,13 @@
+/* Custom Styles for User Management System */
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.auth-card {
+    transition: transform 0.2s;
+}
+
+.auth-card:hover {
+    transform: translateY(-5px);
+}
